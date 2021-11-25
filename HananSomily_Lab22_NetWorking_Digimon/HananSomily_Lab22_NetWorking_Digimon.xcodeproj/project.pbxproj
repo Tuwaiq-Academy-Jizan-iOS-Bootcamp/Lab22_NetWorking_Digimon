@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D0CBBC2274E765C005C4D79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CBBC1274E765C005C4D79 /* AppDelegate.swift */; };
+		2D0CBBC4274E765C005C4D79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CBBC3274E765C005C4D79 /* SceneDelegate.swift */; };
+		2D0CBBC6274E765C005C4D79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CBBC5274E765C005C4D79 /* ViewController.swift */; };
+		2D0CBBC9274E765C005C4D79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0CBBC7274E765C005C4D79 /* Main.storyboard */; };
+		2D0CBBCB274E765E005C4D79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0CBBCA274E765E005C4D79 /* Assets.xcassets */; };
+		2D0CBBCE274E765E005C4D79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0CBBCC274E765E005C4D79 /* LaunchScreen.storyboard */; };
+		2D0CBBD9274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CBBD8274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonTests.swift */; };
+		2D0CBBE3274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CBBE2274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonUITests.swift */; };
+		2D0CBBE5274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CBBE4274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonUITestsLaunchTests.swift */; };
+		2D0CBBF5274E773B005C4D79 /* DigimonStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CBBF4274E773B005C4D79 /* DigimonStruct.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D0CBBD5274E765E005C4D79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D0CBBB6274E765C005C4D79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D0CBBBD274E765C005C4D79;
+			remoteInfo = HananSomily_Lab22_NetWorking_Digimon;
+		};
+		2D0CBBDF274E765E005C4D79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D0CBBB6274E765C005C4D79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D0CBBBD274E765C005C4D79;
+			remoteInfo = HananSomily_Lab22_NetWorking_Digimon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D0CBBBE274E765C005C4D79 /* HananSomily_Lab22_NetWorking_Digimon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HananSomily_Lab22_NetWorking_Digimon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D0CBBC1274E765C005C4D79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D0CBBC3274E765C005C4D79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2D0CBBC5274E765C005C4D79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D0CBBC8274E765C005C4D79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D0CBBCA274E765E005C4D79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D0CBBCD274E765E005C4D79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D0CBBCF274E765E005C4D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D0CBBD4274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HananSomily_Lab22_NetWorking_DigimonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D0CBBD8274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HananSomily_Lab22_NetWorking_DigimonTests.swift; sourceTree = "<group>"; };
+		2D0CBBDE274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HananSomily_Lab22_NetWorking_DigimonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D0CBBE2274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HananSomily_Lab22_NetWorking_DigimonUITests.swift; sourceTree = "<group>"; };
+		2D0CBBE4274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HananSomily_Lab22_NetWorking_DigimonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2D0CBBF4274E773B005C4D79 /* DigimonStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonStruct.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D0CBBBB274E765C005C4D79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D0CBBD1274E765E005C4D79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D0CBBDB274E765E005C4D79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D0CBBB5274E765C005C4D79 = {
+			isa = PBXGroup;
+			children = (
+				2D0CBBC0274E765C005C4D79 /* HananSomily_Lab22_NetWorking_Digimon */,
+				2D0CBBD7274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonTests */,
+				2D0CBBE1274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonUITests */,
+				2D0CBBBF274E765C005C4D79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D0CBBBF274E765C005C4D79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D0CBBBE274E765C005C4D79 /* HananSomily_Lab22_NetWorking_Digimon.app */,
+				2D0CBBD4274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonTests.xctest */,
+				2D0CBBDE274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D0CBBC0274E765C005C4D79 /* HananSomily_Lab22_NetWorking_Digimon */ = {
+			isa = PBXGroup;
+			children = (
+				2D0CBBC1274E765C005C4D79 /* AppDelegate.swift */,
+				2D0CBBC3274E765C005C4D79 /* SceneDelegate.swift */,
+				2D0CBBF1274E766C005C4D79 /* Model */,
+				2D0CBBF3274E76D2005C4D79 /* Controller */,
+				2D0CBBF2274E76BD005C4D79 /* View */,
+				2D0CBBC7274E765C005C4D79 /* Main.storyboard */,
+				2D0CBBCA274E765E005C4D79 /* Assets.xcassets */,
+				2D0CBBCC274E765E005C4D79 /* LaunchScreen.storyboard */,
+				2D0CBBCF274E765E005C4D79 /* Info.plist */,
+			);
+			path = HananSomily_Lab22_NetWorking_Digimon;
+			sourceTree = "<group>";
+		};
+		2D0CBBD7274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D0CBBD8274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonTests.swift */,
+			);
+			path = HananSomily_Lab22_NetWorking_DigimonTests;
+			sourceTree = "<group>";
+		};
+		2D0CBBE1274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D0CBBE2274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonUITests.swift */,
+				2D0CBBE4274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonUITestsLaunchTests.swift */,
+			);
+			path = HananSomily_Lab22_NetWorking_DigimonUITests;
+			sourceTree = "<group>";
+		};
+		2D0CBBF1274E766C005C4D79 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D0CBBF4274E773B005C4D79 /* DigimonStruct.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2D0CBBF2274E76BD005C4D79 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D0CBBF3274E76D2005C4D79 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2D0CBBC5274E765C005C4D79 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D0CBBBD274E765C005C4D79 /* HananSomily_Lab22_NetWorking_Digimon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D0CBBE8274E765E005C4D79 /* Build configuration list for PBXNativeTarget "HananSomily_Lab22_NetWorking_Digimon" */;
+			buildPhases = (
+				2D0CBBBA274E765C005C4D79 /* Sources */,
+				2D0CBBBB274E765C005C4D79 /* Frameworks */,
+				2D0CBBBC274E765C005C4D79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HananSomily_Lab22_NetWorking_Digimon;
+			productName = HananSomily_Lab22_NetWorking_Digimon;
+			productReference = 2D0CBBBE274E765C005C4D79 /* HananSomily_Lab22_NetWorking_Digimon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D0CBBD3274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D0CBBEB274E765E005C4D79 /* Build configuration list for PBXNativeTarget "HananSomily_Lab22_NetWorking_DigimonTests" */;
+			buildPhases = (
+				2D0CBBD0274E765E005C4D79 /* Sources */,
+				2D0CBBD1274E765E005C4D79 /* Frameworks */,
+				2D0CBBD2274E765E005C4D79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D0CBBD6274E765E005C4D79 /* PBXTargetDependency */,
+			);
+			name = HananSomily_Lab22_NetWorking_DigimonTests;
+			productName = HananSomily_Lab22_NetWorking_DigimonTests;
+			productReference = 2D0CBBD4274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2D0CBBDD274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D0CBBEE274E765E005C4D79 /* Build configuration list for PBXNativeTarget "HananSomily_Lab22_NetWorking_DigimonUITests" */;
+			buildPhases = (
+				2D0CBBDA274E765E005C4D79 /* Sources */,
+				2D0CBBDB274E765E005C4D79 /* Frameworks */,
+				2D0CBBDC274E765E005C4D79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D0CBBE0274E765E005C4D79 /* PBXTargetDependency */,
+			);
+			name = HananSomily_Lab22_NetWorking_DigimonUITests;
+			productName = HananSomily_Lab22_NetWorking_DigimonUITests;
+			productReference = 2D0CBBDE274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D0CBBB6274E765C005C4D79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					2D0CBBBD274E765C005C4D79 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					2D0CBBD3274E765E005C4D79 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 2D0CBBBD274E765C005C4D79;
+					};
+					2D0CBBDD274E765E005C4D79 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 2D0CBBBD274E765C005C4D79;
+					};
+				};
+			};
+			buildConfigurationList = 2D0CBBB9274E765C005C4D79 /* Build configuration list for PBXProject "HananSomily_Lab22_NetWorking_Digimon" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D0CBBB5274E765C005C4D79;
+			productRefGroup = 2D0CBBBF274E765C005C4D79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D0CBBBD274E765C005C4D79 /* HananSomily_Lab22_NetWorking_Digimon */,
+				2D0CBBD3274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonTests */,
+				2D0CBBDD274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D0CBBBC274E765C005C4D79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D0CBBCE274E765E005C4D79 /* LaunchScreen.storyboard in Resources */,
+				2D0CBBCB274E765E005C4D79 /* Assets.xcassets in Resources */,
+				2D0CBBC9274E765C005C4D79 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D0CBBD2274E765E005C4D79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D0CBBDC274E765E005C4D79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D0CBBBA274E765C005C4D79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D0CBBC6274E765C005C4D79 /* ViewController.swift in Sources */,
+				2D0CBBC2274E765C005C4D79 /* AppDelegate.swift in Sources */,
+				2D0CBBF5274E773B005C4D79 /* DigimonStruct.swift in Sources */,
+				2D0CBBC4274E765C005C4D79 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D0CBBD0274E765E005C4D79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D0CBBD9274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D0CBBDA274E765E005C4D79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D0CBBE5274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonUITestsLaunchTests.swift in Sources */,
+				2D0CBBE3274E765E005C4D79 /* HananSomily_Lab22_NetWorking_DigimonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D0CBBD6274E765E005C4D79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D0CBBBD274E765C005C4D79 /* HananSomily_Lab22_NetWorking_Digimon */;
+			targetProxy = 2D0CBBD5274E765E005C4D79 /* PBXContainerItemProxy */;
+		};
+		2D0CBBE0274E765E005C4D79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D0CBBBD274E765C005C4D79 /* HananSomily_Lab22_NetWorking_Digimon */;
+			targetProxy = 2D0CBBDF274E765E005C4D79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D0CBBC7274E765C005C4D79 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D0CBBC8274E765C005C4D79 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D0CBBCC274E765E005C4D79 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D0CBBCD274E765E005C4D79 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D0CBBE6274E765E005C4D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D0CBBE7274E765E005C4D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D0CBBE9274E765E005C4D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6HVZQF48D4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HananSomily_Lab22_NetWorking_Digimon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "w.HananSomily-Lab22-NetWorking-Digimon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D0CBBEA274E765E005C4D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6HVZQF48D4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HananSomily_Lab22_NetWorking_Digimon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "w.HananSomily-Lab22-NetWorking-Digimon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2D0CBBEC274E765E005C4D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6HVZQF48D4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "w.HananSomily-Lab22-NetWorking-DigimonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HananSomily_Lab22_NetWorking_Digimon.app/HananSomily_Lab22_NetWorking_Digimon";
+			};
+			name = Debug;
+		};
+		2D0CBBED274E765E005C4D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6HVZQF48D4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "w.HananSomily-Lab22-NetWorking-DigimonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HananSomily_Lab22_NetWorking_Digimon.app/HananSomily_Lab22_NetWorking_Digimon";
+			};
+			name = Release;
+		};
+		2D0CBBEF274E765E005C4D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6HVZQF48D4;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "w.HananSomily-Lab22-NetWorking-DigimonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HananSomily_Lab22_NetWorking_Digimon;
+			};
+			name = Debug;
+		};
+		2D0CBBF0274E765E005C4D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6HVZQF48D4;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "w.HananSomily-Lab22-NetWorking-DigimonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HananSomily_Lab22_NetWorking_Digimon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D0CBBB9274E765C005C4D79 /* Build configuration list for PBXProject "HananSomily_Lab22_NetWorking_Digimon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D0CBBE6274E765E005C4D79 /* Debug */,
+				2D0CBBE7274E765E005C4D79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D0CBBE8274E765E005C4D79 /* Build configuration list for PBXNativeTarget "HananSomily_Lab22_NetWorking_Digimon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D0CBBE9274E765E005C4D79 /* Debug */,
+				2D0CBBEA274E765E005C4D79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D0CBBEB274E765E005C4D79 /* Build configuration list for PBXNativeTarget "HananSomily_Lab22_NetWorking_DigimonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D0CBBEC274E765E005C4D79 /* Debug */,
+				2D0CBBED274E765E005C4D79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D0CBBEE274E765E005C4D79 /* Build configuration list for PBXNativeTarget "HananSomily_Lab22_NetWorking_DigimonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D0CBBEF274E765E005C4D79 /* Debug */,
+				2D0CBBF0274E765E005C4D79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D0CBBB6274E765C005C4D79 /* Project object */;
+}
