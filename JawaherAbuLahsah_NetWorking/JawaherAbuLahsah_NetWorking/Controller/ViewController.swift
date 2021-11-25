@@ -72,16 +72,23 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CellCustomView
         cell.nameDigimon.text = digimons[indexPath.row].name
         cell.levelDigimon.text = digimons[indexPath.row].level
-       // cell.imageDigimon.image = UIImage (named: digimons[indexPath.row].img)
-      
+        
+        cell.imageDigimon.image = nil
+        
+        
+        
+        //downloaded image
         let urlImage = URL(string: digimons[indexPath.row].img)
         
         if let urlImage = urlImage {
             DispatchQueue.global().async {
                 if let data = try? Data(contentsOf: urlImage){
-                DispatchQueue.main.async {
-                cell.imageDigimon.image = UIImage(data: data)
-                   }
+                    DispatchQueue.main.async {
+                        //Check if the current cell is displayed
+                        if tableView.cellForRow(at: indexPath) != nil {
+                            cell.imageDigimon.image = UIImage(data: data)
+                        }
+                    }
                 }
             }
         }
