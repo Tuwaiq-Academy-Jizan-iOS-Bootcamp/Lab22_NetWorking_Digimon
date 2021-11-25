@@ -10,13 +10,21 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     
+    @IBOutlet weak var digimonTV: UITableView!
     @IBOutlet weak var imageView1: UIImageView!
     @IBOutlet weak var levelLabel: UILabel!
+    var digmon = [Digmon]()
+    
+    var arrr = ["m"]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         //pass end point as argument to function that will get data
+        digimonTV.delegate = self
+        digimonTV.dataSource = self
         getaData(with:"/digimon")
+        
+        
          
     }
     //req Method
@@ -41,28 +49,27 @@ class ViewController: UIViewController {
                         let decoderData = try decoder.decode([Digmon].self, from: safeData)
                         //print the firest json object from json array
                         print("decode data:",decoderData[0])
-//                        self.imageView1.image =  try UIImage(data: Data(contentsOf: URL(string: decoderData[0].img )!))
+                        
                             DispatchQueue.main.async {
-
-                                // Do all your UI stuff here
 
                         self.nameLabel.text = decoderData[0].name
                         self.levelLabel.text = decoderData[0].level
+                                self.digmon = decoderData
+                                self.digimonTV.reloadData()
                              
-//                                self.imageView1.image =  UIImage(data:  decoderData[0].img )!
-                              ////////////
+          
+                        
                                   if let imageURL = URL(string: decoderData[0].img){
-                                DispatchQueue.global().async {
                                    let data = try? Data(contentsOf: imageURL)
                                     if let data = data {
                                         let image = UIImage(data: data)
-                                        DispatchQueue.main.async {
                                             self.imageView1.image = image
+                                        
                                     }
-                                }
-                                }}
+                                      
+                                  }
                                 
-                                ///
+                             
                             
                             }
                          
@@ -90,3 +97,35 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController : UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return digmon.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath )
+        
+        var content = cell.defaultContentConfiguration()
+        content.text = digmon[indexPath.row].name
+        content.secondaryText = digmon[indexPath.row].name
+        //content.image =
+        if let imageURL = URL(string: digmon[indexPath.row].img){
+            let data = try? Data(contentsOf: imageURL)
+             if let data = data {
+                 let image = UIImage(data: data)
+                 content.image = image
+                 
+             }
+               
+           }
+       // UIImage(named: "\(digmon[indexPath.row].img)")
+        content.imageProperties.maximumSize = CGSize(width: 100, height: 100)
+      
+        cell.accessoryType = .disclosureIndicator
+        cell.contentConfiguration=content
+        
+        return cell
+    }
+    
+    
+}
