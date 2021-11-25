@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         //pass end point as argument to function that will get data
         getaData(with:"/digimon")
+         
     }
     //req Method
     //1.get:
@@ -40,6 +41,31 @@ class ViewController: UIViewController {
                         let decoderData = try decoder.decode([Digmon].self, from: safeData)
                         //print the firest json object from json array
                         print("decode data:",decoderData[0])
+//                        self.imageView1.image =  try UIImage(data: Data(contentsOf: URL(string: decoderData[0].img )!))
+                            DispatchQueue.main.async {
+
+                                // Do all your UI stuff here
+
+                        self.nameLabel.text = decoderData[0].name
+                        self.levelLabel.text = decoderData[0].level
+                             
+//                                self.imageView1.image =  UIImage(data:  decoderData[0].img )!
+                              ////////////
+                                  if let imageURL = URL(string: decoderData[0].img){
+                                DispatchQueue.global().async {
+                                   let data = try? Data(contentsOf: imageURL)
+                                    if let data = data {
+                                        let image = UIImage(data: data)
+                                        DispatchQueue.main.async {
+                                            self.imageView1.image = image
+                                    }
+                                }
+                                }}
+                                
+                                ///
+                            
+                            }
+                         
                         
                     }
                     
