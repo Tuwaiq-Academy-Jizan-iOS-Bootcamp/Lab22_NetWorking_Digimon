@@ -26,7 +26,7 @@ class ViewController: UIViewController {
 //        imageDigimon.image = imageDigiminview
 //        nameDigimon.text = nameDigimonView
 //        LabelDigimon.text = LabelDigimonView
-        let url1 = URL(string: "https://digimon.shadowsmith.com/img/koromon.jpg")!
+        let url1 = URL(string: "https://digimon.shadowsmith.com/img/yokomon.jpg")!
         
         let dataTask = URLSession.shared.dataTask(with: url1) { [weak self] (data, _, _)in
             if let data = data {
@@ -90,8 +90,8 @@ class ViewController: UIViewController {
                             
                             
                             for ele in decodedData {
-//                                print(ele.name)
-//                                print(ele.level)
+                                print(ele.name)
+                                print(ele.level)
                                 print(ele.img)
                             }
                             
@@ -118,7 +118,6 @@ class ViewController: UIViewController {
     } // end func getData
     
 }
-
 
 
 
