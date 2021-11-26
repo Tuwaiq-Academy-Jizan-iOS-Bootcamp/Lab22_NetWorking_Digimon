@@ -13,11 +13,21 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var levelOfDigmon: UILabel!
     @IBOutlet weak var nameOfDigmon: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         getData(with: "/digimon")
-
+        
+        
+        let url = URL(string: "https://digimon.shadowsmith.com/img/koromon.jpg")!
+        let dataTask = URLSession.shared.dataTask(with: url) { (data, _, _) in
+            if let data = data {
+                self.digmonImag.image = UIImage(data: data)
+            }
+        }
+        dataTask.resume()
+       
     }
     func getData(with endPoint:String){
         let baseURL = "https://digimon-api.vercel.app/api" // make constens for baseUrl "link url"
@@ -33,10 +43,15 @@ class ViewController: UIViewController {
                             let decodedData = try decoder.decode([Digmon].self, from: safeData) // [Digmon] becuse the jeson in array!!
                             print("DECODED DATA", decodedData[0])
                             
+                            
+                            
+                           
                             self.digmonApi = decodedData
                             DispatchQueue.main.async {
                                 self.nameOfDigmon.text = self.digmonApi[0].name
                                 self.levelOfDigmon.text = self.digmonApi[0].level
+                                self.digmonImag.image = UIImage(data: data!)
+                                
                             }
                         } catch {
                             print("SOMTHING WENT WRRONG!", error.localizedDescription)
