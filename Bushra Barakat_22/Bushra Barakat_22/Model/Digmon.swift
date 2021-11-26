@@ -6,8 +6,11 @@
 //
 
 import Foundation
+//struct Digmons: Codable{
+//    let digmons: [Digmon]
+//}
 struct Digmon: Codable{
     var name :String
-    var im: String
+    var img: String
     var level :String
 }

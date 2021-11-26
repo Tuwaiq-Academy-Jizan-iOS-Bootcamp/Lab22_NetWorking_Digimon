@@ -8,14 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    @IBOutlet weak var tableView: UITableView!
-    
     var digmons = [Digmon]()
+    @IBOutlet weak var tableView: UITableView!
+    var dd = [Digmon(name: "Koromon", img: "https://digimon.shadowsmith.com/img/koromon.jpg", level: "In Training")]
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         getData(with: "/digimon")
+       tableView.dataSource = self
     }
 
     func getData(with endPoint: String){
@@ -37,10 +38,13 @@ class ViewController: UIViewController {
                         do {
                             let decoder = JSONDecoder()
                             let decodedData = try decoder.decode([Digmon].self, from: safeData)
-                            
-                            print("decoded data", decodedData[0])
+//                            self.digmons = decodedData.digmons
+                            DispatchQueue.main.async {
+                                self.tableView.reloadData()
+                            }
+                            print("decoded data")
                         }catch{
-                            print("somthing went wrong", error.localizedDescription)
+                            print("somthing went wrong",String(describing: error))
                         }
                     }
                 }
@@ -53,18 +57,18 @@ class ViewController: UIViewController {
       
     
 }
-extension ViewController:UITableViewDelegate, UITableViewDataSource {
+extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return digmons.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CellViewController
         cell.digamonNameLabel.text = digmons[indexPath.row].name
-        cell.digmonLevleLabel.text = digmons[indexPath.row].im
-        
+        cell.digmonLevleLabel.text = digmons[indexPath.row].img
+
     return cell
     }
-    
-    
+
+
 }
