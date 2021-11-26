@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ArwaAlattas_API" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yzS-2v-V1t">
+                                <rect key="frame" x="10" y="54" width="394" height="798"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="150" id="aDL-Xg-1NC" customClass="digimonDetailCell" customModule="ArwaAlattas_API" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="394" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aDL-Xg-1NC" id="Y7P-bq-t64">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iFR-W5-P7T">
+                                                    <rect key="frame" x="20" y="16.5" width="101" height="117"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="iFR-W5-P7T" secondAttribute="height" multiplier="101:117" id="deV-zJ-HKW"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arT-TN-MCX">
+                                                    <rect key="frame" x="162" y="22" width="200" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6I-lP-pPR">
+                                                    <rect key="frame" x="162" y="87" width="200" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="arT-TN-MCX" firstAttribute="leading" secondItem="iFR-W5-P7T" secondAttribute="trailing" constant="41" id="8gj-Ds-Sru"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="arT-TN-MCX" secondAttribute="trailing" constant="12" id="EPa-h6-FgR"/>
+                                                <constraint firstItem="arT-TN-MCX" firstAttribute="top" secondItem="Y7P-bq-t64" secondAttribute="topMargin" constant="11" id="QmH-xn-oEx"/>
+                                                <constraint firstItem="B6I-lP-pPR" firstAttribute="top" secondItem="arT-TN-MCX" secondAttribute="bottom" constant="44" id="TN1-tU-2FJ"/>
+                                                <constraint firstItem="iFR-W5-P7T" firstAttribute="leading" secondItem="Y7P-bq-t64" secondAttribute="leadingMargin" id="ZYt-gJ-GwS"/>
+                                                <constraint firstItem="B6I-lP-pPR" firstAttribute="leading" secondItem="arT-TN-MCX" secondAttribute="leading" id="Zzz-8d-JKC"/>
+                                                <constraint firstItem="B6I-lP-pPR" firstAttribute="trailing" secondItem="arT-TN-MCX" secondAttribute="trailing" id="d0K-i2-tN3"/>
+                                                <constraint firstItem="iFR-W5-P7T" firstAttribute="height" secondItem="Y7P-bq-t64" secondAttribute="height" multiplier="0.78" id="jm5-Zk-qVv"/>
+                                                <constraint firstItem="iFR-W5-P7T" firstAttribute="centerY" secondItem="Y7P-bq-t64" secondAttribute="centerY" id="k8p-xp-jAY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="digimonLevel" destination="B6I-lP-pPR" id="qcL-ko-yc6"/>
+                                            <outlet property="digimonName" destination="arT-TN-MCX" id="NTY-Fx-agn"/>
+                                            <outlet property="digimonimage" destination="iFR-W5-P7T" id="ktT-3X-rHE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yzS-2v-V1t" secondAttribute="bottom" constant="10" id="7uh-ql-tsi"/>
+                            <constraint firstItem="yzS-2v-V1t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="fNM-gX-2qn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yzS-2v-V1t" secondAttribute="trailing" constant="10" id="lvj-1s-HWR"/>
+                            <constraint firstItem="yzS-2v-V1t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="qVc-PG-kBR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="digimonTableView" destination="yzS-2v-V1t" id="LYi-9i-o57"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="63.616071428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
