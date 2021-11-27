@@ -16,6 +16,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         getData(with: "/digimon")
        tableView.dataSource = self
+       tableView.delegate = self
+       
+        
+        
+        
     }
 
     func getData(with endPoint: String){
@@ -37,12 +42,11 @@ class ViewController: UIViewController {
                         do {
                             let decoder = JSONDecoder()
                             let decodedData = try decoder.decode([Digmon].self, from: safeData)
-                            self.digmons = decodedData
                             DispatchQueue.main.async {
+                                self.digmons = decodedData
                                 self.tableView.reloadData()
-
                             }
-                            print("decoded data")
+                            print("decoded data", decodedData[0])
                         }catch{
                             print("somthing went wrong",String(describing: error))
                         }
@@ -57,7 +61,7 @@ class ViewController: UIViewController {
       
     
 }
-extension ViewController: UITableViewDataSource {
+extension ViewController: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return digmons.count
     }
@@ -66,9 +70,37 @@ extension ViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CellViewController
         cell.digamonNameLabel.text = digmons[indexPath.row].name
         cell.digmonLevleLabel.text = digmons[indexPath.row].level
+//        if let imageURL = URL(string: self.digmons[indexPath.row].img){
+//            DispatchQueue.global().async {
+//                if let image = try? Data(contentOf: imageURL){
+//                    let digmoImage = UIImage(data: image)
+//                    DispatchQueue.main.async {
+//                        digmonImageView.image = digmoImage
+//                        cell.contentConfiguration = cell
+//                    }
+//                }
+//            }
+//        }
+        if
+        let imageURL = URL(string: digmons[indexPath.row].img) {
+            DispatchQueue.global().async {
+                let data = try? Data(contentsOf: imageURL)
+                if let data = data {
+                    let image = UIImage(data: data)
+                    DispatchQueue.main.async {
+                        cell.digmonImageView.image = image
+                    }
+                }
+            }
+          
+            
+        }
+        
 
     return cell
     }
 
-
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
 }
