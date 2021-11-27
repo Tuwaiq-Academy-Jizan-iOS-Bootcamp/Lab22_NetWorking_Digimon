@@ -1,26 +1,19 @@
-//
-//  ViewController.swift
-//  API
-//
-//  Created by Abdulrahman Gazwani on 20/04/1443 AH.
-//
+
 
 import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var nameDigimon: UILabel!
-    @IBOutlet weak var levelDigimon: UILabel!
-    @IBOutlet weak var imageDigimon: UIImageView!
+    @IBOutlet weak var tableViewDigimon: UITableView!
+    
+    var alldigimon = [Digmon] ()
     
     override func viewDidLoad() {
         getdata(with: "/digimon")
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
       
-        
-    
+        tableViewDigimon.delegate = self
+        tableViewDigimon.dataSource = self
         
     }
     func getdata(with endPoint : String){
@@ -49,21 +42,11 @@ class ViewController: UIViewController {
                         do {
                             let decoder = JSONDecoder()
                             let decodeData = try decoder.decode([Digmon].self , from: safeData)
+                            self.alldigimon = decodeData
+                            
                           //  imageDigimon.image = UIImage(data: data)
                             DispatchQueue.main.async {
-                                
-                            self.nameDigimon.text = decodeData[11].name
-                            self.levelDigimon.text = "\(decodeData[11].level)"
-                                if let imageD = URL (string: decodeData[11].img) {
-                                    let data = try? Data (contentsOf: imageD)
-                                    if let data = data {
-                                        let image = UIImage (data: data)
-                                        self.imageDigimon.image = image
-                                    }
-                                }
-                            
-                         //   print("DECODED DATA",decodeData[0])
-                            
+                                self.tableViewDigimon.reloadData()
                             }}
                         catch{
                             print("SOMETHING WENT WRONG",error.localizedDescription)
@@ -77,6 +60,36 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController:UITableViewDelegate,UITableViewDataSource{
+   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     return alldigimon.count
+   }
+   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+     let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for:indexPath) as! DigimonCell
+     cell.nameDigimon.text = alldigimon[indexPath.row].name
+     cell.levelDigimon.text = alldigimon[indexPath.row].level
+     cell.imageDigimon.image = nil
+       
+       
+     let urlImage = URL(string: alldigimon[indexPath.row].img)
+     if let urlImage = urlImage {
+       DispatchQueue.global().async {
+         if let data = try? Data(contentsOf: urlImage){
+           DispatchQueue.main.async {
+            
+             if tableView.cellForRow(at: indexPath) != nil {
+               cell.imageDigimon.image = UIImage(data: data)
+             }
+           }
+         }
+       }
+     }
+     return cell
+   }
+   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+     return 100
+   }
+ }
 
 
 
