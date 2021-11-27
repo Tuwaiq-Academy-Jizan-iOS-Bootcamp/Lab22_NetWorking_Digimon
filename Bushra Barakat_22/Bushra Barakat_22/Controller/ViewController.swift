@@ -8,9 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var digmons = [Digmon]()
+    var digmons: [Digmon] = []
     @IBOutlet weak var tableView: UITableView!
-    var dd = [Digmon(name: "Koromon", img: "https://digimon.shadowsmith.com/img/koromon.jpg", level: "In Training")]
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,9 +37,10 @@ class ViewController: UIViewController {
                         do {
                             let decoder = JSONDecoder()
                             let decodedData = try decoder.decode([Digmon].self, from: safeData)
-//                            self.digmons = decodedData.digmons
+                            self.digmons = decodedData
                             DispatchQueue.main.async {
                                 self.tableView.reloadData()
+
                             }
                             print("decoded data")
                         }catch{
@@ -65,7 +65,7 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CellViewController
         cell.digamonNameLabel.text = digmons[indexPath.row].name
-        cell.digmonLevleLabel.text = digmons[indexPath.row].img
+        cell.digmonLevleLabel.text = digmons[indexPath.row].level
 
     return cell
     }
