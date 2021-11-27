@@ -10,12 +10,27 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    @IBOutlet weak var digmonView: UITableView!
     @IBOutlet weak var labelone: UILabel!
     @IBOutlet weak var labelTwo: UILabel!
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var image: UIImageView! {
+        didSet{
+                 digmonView.delegate = self
+                 digmonView.dataSource = self
+             }
+
+         }
+  
+    }
+    
+var dArray:[Digemon] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
+        digmonView.delegate = self
+        digmonView.dataSource = self
+        
         getData(with: "/digimon")
     }
     
@@ -47,8 +62,8 @@ class ViewController: UIViewController {
                             let decodedData = try decoder.decode([Digmon].self, from: safeData)
                             print("Decode Data",decodedData[0])
                             DispatchQueue.main.async {
-                                self.labelone.text = decodedData[0].name
-                                self.labelTwo.text = decodedData[0].level
+                               self.labelone.text = decodedData[0].name
+                              self.labelTwo.text = decodedData[0].level
                                 if let imageURL = URL (string: decodedData[0].img){
                                     let data = try? Data(contentsOf: imageURL)
                                     if let data = data {
@@ -71,6 +86,5 @@ class ViewController: UIViewController {
             task.resume()
         }
     }
-    
 }
 
