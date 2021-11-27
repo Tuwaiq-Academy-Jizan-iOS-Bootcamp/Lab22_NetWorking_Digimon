@@ -7,10 +7,13 @@
 
 import UIKit
 class ViewController: UIViewController {
- @IBOutlet weak var lmageDigimon: UIImageView!
- @IBOutlet weak var lableName: UILabel!
- @IBOutlet weak var lableLevel: UILabel!
- override func viewDidLoad() {
+    
+    @IBOutlet weak var digimonTableView: UITableView!
+    var digimons = [Digimon]()
+    
+    override func viewDidLoad() {
+        digimonTableView.dataSource = self
+        digimonTableView.delegate = self
      super.viewDidLoad()
   getData(with: "/digimon")
  }
@@ -31,16 +34,9 @@ class ViewController: UIViewController {
          do {
      let decoder = JSONDecoder()
      let decodedData = try decoder.decode([Digimon].self,from: safeDate)
-     print(decodedData[0])
+     self .digimons = decodedData
  DispatchQueue.main.async {
- self.lableName.text = decodedData[0].name
- self.lableLevel.text = decodedData[0].level
- if let imageURL = URL(string: decodedData[0].img){
-     let data = try? Data(contentsOf: imageURL)
-     if let data = data {
-     let image = UIImage(data: data)
-     self.lmageDigimon.image = image}
-             }
+     self .digimonTableView.reloadData()
          }
          }catch{
          print(error.localizedDescription)
@@ -52,4 +48,33 @@ class ViewController: UIViewController {
      task.resume()
      }
  }
+ }
+extension ViewController:UITableViewDelegate,UITableViewDataSource{
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+         return digimons.count
+     }
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! costemCell
+         cell.lableName.text = digimons[indexPath.row].name
+         cell.lableLevel.text = digimons[indexPath.row].level
+         cell.lmageDigimon.image = nil
+         let urlImage = URL(string: digimons[indexPath.row].img)
+         if let urlImage = urlImage {
+             DispatchQueue.global().async {
+                 if let data = try? Data(contentsOf: urlImage){
+                     DispatchQueue.main.async {
+                         //Check if the current cell is displayed
+                         if tableView.cellForRow(at: indexPath) != nil {
+                             cell.lmageDigimon.image = UIImage(data: data)
+                         }
+                     }
+                 }
+             }
+         }
+         return cell
+     }
+
+     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+         return 100
+     }
  }
