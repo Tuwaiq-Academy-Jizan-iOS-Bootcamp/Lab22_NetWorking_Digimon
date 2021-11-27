@@ -12,3 +12,4 @@ struct Digmon:Codable {
     var img : String
     var level : String
 }
+

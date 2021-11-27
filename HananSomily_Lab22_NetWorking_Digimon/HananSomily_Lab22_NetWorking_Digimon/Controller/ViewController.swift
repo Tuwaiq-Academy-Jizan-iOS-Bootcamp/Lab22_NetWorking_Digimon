@@ -9,15 +9,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var digimonViewTabelView: UITableView! {
+    didSet {
+        digimonViewTabelView.delegate = self
+                digimonViewTabelView.dataSource = self
+    }
+}
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var levelLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
       getDataURL(with: "/digimon")
+        
         // Do any additional setup after loading the view.
     }
-    
+    var digmonData = [Digmon]()
+   // var array = ["  "]
+
     func getDataURL(with endpoint:String){
         let dataURL = "https://digimon-api.vercel.app/api"
         if let url = URL(string: dataURL + endpoint) {
@@ -29,15 +38,17 @@ class ViewController: UIViewController {
                 print("DO WE HAVE DATA",data)
             if let safeData = data {
                 
-                let decoder = JSONDecoder()
                 do {
+                    
+                    let decoder = JSONDecoder()
                     //let data = try? Date (contentsOf: dataURL)
                     let decodedData = try decoder.decode([Digmon].self , from: safeData)
                     //nameLabel.text =
                     DispatchQueue.main.async {
                         nameLabel.text  = decodedData[0].name
                         levelLabel.text  = decodedData[0].level
-                    
+                        self.digmonData = decodedData
+                        self.digimonViewTabelView.reloadData()
                     if let imageDigmon = URL(string:decodedData[0].img){
                        // DispatchQueue.global().async {
                             let data = try? Data(contentsOf: imageDigmon)
@@ -63,3 +74,31 @@ class ViewController: UIViewController {
   }
 }
 
+extension ViewController : UITableViewDelegate {
+    
+}
+extension ViewController : UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return digmonData.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DigimonCell", for: indexPath)
+
+        var content = cell.defaultContentConfiguration()
+        content.text = digmonData[indexPath.row].name
+        content.secondaryText = digmonData[indexPath.row].level
+        if let imageDigm = URL(string:digmonData[indexPath.row].img){
+           // DispatchQueue.global().async {
+                let data = try? Data(contentsOf: imageDigm)
+                if let data = data {
+                    let image = UIImage(data: data)
+                    content.image = image
+                }
+        }
+        content.imageProperties.maximumSize = CGSize(width: 50, height: 50)
+           cell.accessoryType = .disclosureIndicator
+        cell.contentConfiguration = content
+      return cell
+    }
+}
