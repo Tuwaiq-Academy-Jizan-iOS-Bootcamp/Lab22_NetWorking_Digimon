@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EA0E430274E761600B318E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA0E42F274E761600B318E1 /* AppDelegate.swift */; };
+		1EA0E432274E761600B318E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA0E431274E761600B318E1 /* SceneDelegate.swift */; };
+		1EA0E434274E761600B318E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA0E433274E761600B318E1 /* ViewController.swift */; };
+		1EA0E437274E761600B318E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA0E435274E761600B318E1 /* Main.storyboard */; };
+		1EA0E439274E761800B318E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EA0E438274E761800B318E1 /* Assets.xcassets */; };
+		1EA0E43C274E761800B318E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA0E43A274E761800B318E1 /* LaunchScreen.storyboard */; };
+		1EA0E447274E761800B318E1 /* Amal_jeli____NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA0E446274E761800B318E1 /* Amal_jeli____NetworkingTests.swift */; };
+		1EA0E451274E761800B318E1 /* Amal_jeli____NetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA0E450274E761800B318E1 /* Amal_jeli____NetworkingUITests.swift */; };
+		1EA0E453274E761800B318E1 /* Amal_jeli____NetworkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA0E452274E761800B318E1 /* Amal_jeli____NetworkingUITestsLaunchTests.swift */; };
+		1EA0E465274F4F6700B318E1 /* Digmon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA0E464274F4F6700B318E1 /* Digmon.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EA0E443274E761800B318E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EA0E424274E761600B318E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EA0E42B274E761600B318E1;
+			remoteInfo = "Amal jeli |_ Networking";
+		};
+		1EA0E44D274E761800B318E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EA0E424274E761600B318E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EA0E42B274E761600B318E1;
+			remoteInfo = "Amal jeli |_ Networking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EA0E42C274E761600B318E1 /* Amal jeli |_ Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amal jeli |_ Networking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EA0E42F274E761600B318E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1EA0E431274E761600B318E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1EA0E433274E761600B318E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1EA0E436274E761600B318E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1EA0E438274E761800B318E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EA0E43B274E761800B318E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1EA0E43D274E761800B318E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EA0E442274E761800B318E1 /* Amal jeli |_ NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amal jeli |_ NetworkingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EA0E446274E761800B318E1 /* Amal_jeli____NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Amal_jeli____NetworkingTests.swift"; sourceTree = "<group>"; };
+		1EA0E44C274E761800B318E1 /* Amal jeli |_ NetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amal jeli |_ NetworkingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EA0E450274E761800B318E1 /* Amal_jeli____NetworkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Amal_jeli____NetworkingUITests.swift"; sourceTree = "<group>"; };
+		1EA0E452274E761800B318E1 /* Amal_jeli____NetworkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Amal_jeli____NetworkingUITestsLaunchTests.swift"; sourceTree = "<group>"; };
+		1EA0E464274F4F6700B318E1 /* Digmon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digmon.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EA0E429274E761600B318E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EA0E43F274E761800B318E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EA0E449274E761800B318E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EA0E423274E761600B318E1 = {
+			isa = PBXGroup;
+			children = (
+				1EA0E42E274E761600B318E1 /* Amal jeli |_ Networking */,
+				1EA0E445274E761800B318E1 /* Amal jeli |_ NetworkingTests */,
+				1EA0E44F274E761800B318E1 /* Amal jeli |_ NetworkingUITests */,
+				1EA0E42D274E761600B318E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1EA0E42D274E761600B318E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EA0E42C274E761600B318E1 /* Amal jeli |_ Networking.app */,
+				1EA0E442274E761800B318E1 /* Amal jeli |_ NetworkingTests.xctest */,
+				1EA0E44C274E761800B318E1 /* Amal jeli |_ NetworkingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EA0E42E274E761600B318E1 /* Amal jeli |_ Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1EA0E461274E770C00B318E1 /* model */,
+				1EA0E462274E772000B318E1 /* view */,
+				1EA0E463274E773400B318E1 /* controller */,
+				1EA0E43A274E761800B318E1 /* LaunchScreen.storyboard */,
+				1EA0E433274E761600B318E1 /* ViewController.swift */,
+				1EA0E431274E761600B318E1 /* SceneDelegate.swift */,
+				1EA0E42F274E761600B318E1 /* AppDelegate.swift */,
+				1EA0E43D274E761800B318E1 /* Info.plist */,
+			);
+			path = "Amal jeli |_ Networking";
+			sourceTree = "<group>";
+		};
+		1EA0E445274E761800B318E1 /* Amal jeli |_ NetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				1EA0E446274E761800B318E1 /* Amal_jeli____NetworkingTests.swift */,
+			);
+			path = "Amal jeli |_ NetworkingTests";
+			sourceTree = "<group>";
+		};
+		1EA0E44F274E761800B318E1 /* Amal jeli |_ NetworkingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1EA0E450274E761800B318E1 /* Amal_jeli____NetworkingUITests.swift */,
+				1EA0E452274E761800B318E1 /* Amal_jeli____NetworkingUITestsLaunchTests.swift */,
+			);
+			path = "Amal jeli |_ NetworkingUITests";
+			sourceTree = "<group>";
+		};
+		1EA0E461274E770C00B318E1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1EA0E464274F4F6700B318E1 /* Digmon.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		1EA0E462274E772000B318E1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1EA0E435274E761600B318E1 /* Main.storyboard */,
+				1EA0E438274E761800B318E1 /* Assets.xcassets */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		1EA0E463274E773400B318E1 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = controller;
+			path = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EA0E42B274E761600B318E1 /* Amal jeli |_ Networking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EA0E456274E761800B318E1 /* Build configuration list for PBXNativeTarget "Amal jeli |_ Networking" */;
+			buildPhases = (
+				1EA0E428274E761600B318E1 /* Sources */,
+				1EA0E429274E761600B318E1 /* Frameworks */,
+				1EA0E42A274E761600B318E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Amal jeli |_ Networking";
+			productName = "Amal jeli |_ Networking";
+			productReference = 1EA0E42C274E761600B318E1 /* Amal jeli |_ Networking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1EA0E441274E761800B318E1 /* Amal jeli |_ NetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EA0E459274E761800B318E1 /* Build configuration list for PBXNativeTarget "Amal jeli |_ NetworkingTests" */;
+			buildPhases = (
+				1EA0E43E274E761800B318E1 /* Sources */,
+				1EA0E43F274E761800B318E1 /* Frameworks */,
+				1EA0E440274E761800B318E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EA0E444274E761800B318E1 /* PBXTargetDependency */,
+			);
+			name = "Amal jeli |_ NetworkingTests";
+			productName = "Amal jeli |_ NetworkingTests";
+			productReference = 1EA0E442274E761800B318E1 /* Amal jeli |_ NetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1EA0E44B274E761800B318E1 /* Amal jeli |_ NetworkingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EA0E45C274E761800B318E1 /* Build configuration list for PBXNativeTarget "Amal jeli |_ NetworkingUITests" */;
+			buildPhases = (
+				1EA0E448274E761800B318E1 /* Sources */,
+				1EA0E449274E761800B318E1 /* Frameworks */,
+				1EA0E44A274E761800B318E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EA0E44E274E761800B318E1 /* PBXTargetDependency */,
+			);
+			name = "Amal jeli |_ NetworkingUITests";
+			productName = "Amal jeli |_ NetworkingUITests";
+			productReference = 1EA0E44C274E761800B318E1 /* Amal jeli |_ NetworkingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EA0E424274E761600B318E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					1EA0E42B274E761600B318E1 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					1EA0E441274E761800B318E1 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 1EA0E42B274E761600B318E1;
+					};
+					1EA0E44B274E761800B318E1 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 1EA0E42B274E761600B318E1;
+					};
+				};
+			};
+			buildConfigurationList = 1EA0E427274E761600B318E1 /* Build configuration list for PBXProject "Amal jeli |_ Networking" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1EA0E423274E761600B318E1;
+			productRefGroup = 1EA0E42D274E761600B318E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EA0E42B274E761600B318E1 /* Amal jeli |_ Networking */,
+				1EA0E441274E761800B318E1 /* Amal jeli |_ NetworkingTests */,
+				1EA0E44B274E761800B318E1 /* Amal jeli |_ NetworkingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EA0E42A274E761600B318E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA0E43C274E761800B318E1 /* LaunchScreen.storyboard in Resources */,
+				1EA0E439274E761800B318E1 /* Assets.xcassets in Resources */,
+				1EA0E437274E761600B318E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EA0E440274E761800B318E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EA0E44A274E761800B318E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EA0E428274E761600B318E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA0E434274E761600B318E1 /* ViewController.swift in Sources */,
+				1EA0E465274F4F6700B318E1 /* Digmon.swift in Sources */,
+				1EA0E430274E761600B318E1 /* AppDelegate.swift in Sources */,
+				1EA0E432274E761600B318E1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EA0E43E274E761800B318E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA0E447274E761800B318E1 /* Amal_jeli____NetworkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EA0E448274E761800B318E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA0E451274E761800B318E1 /* Amal_jeli____NetworkingUITests.swift in Sources */,
+				1EA0E453274E761800B318E1 /* Amal_jeli____NetworkingUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EA0E444274E761800B318E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EA0E42B274E761600B318E1 /* Amal jeli |_ Networking */;
+			targetProxy = 1EA0E443274E761800B318E1 /* PBXContainerItemProxy */;
+		};
+		1EA0E44E274E761800B318E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EA0E42B274E761600B318E1 /* Amal jeli |_ Networking */;
+			targetProxy = 1EA0E44D274E761800B318E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1EA0E435274E761600B318E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EA0E436274E761600B318E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1EA0E43A274E761800B318E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EA0E43B274E761800B318E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1EA0E454274E761800B318E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1EA0E455274E761800B318E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EA0E457274E761800B318E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FQP67L8BR4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Amal jeli |_ Networking/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AMAL.Amal-jeli----Networking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1EA0E458274E761800B318E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FQP67L8BR4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Amal jeli |_ Networking/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AMAL.Amal-jeli----Networking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1EA0E45A274E761800B318E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FQP67L8BR4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AMAL.Amal-jeli----NetworkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amal jeli |_ Networking.app/Amal jeli |_ Networking";
+			};
+			name = Debug;
+		};
+		1EA0E45B274E761800B318E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FQP67L8BR4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AMAL.Amal-jeli----NetworkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amal jeli |_ Networking.app/Amal jeli |_ Networking";
+			};
+			name = Release;
+		};
+		1EA0E45D274E761800B318E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FQP67L8BR4;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AMAL.Amal-jeli----NetworkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Amal jeli |_ Networking";
+			};
+			name = Debug;
+		};
+		1EA0E45E274E761800B318E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FQP67L8BR4;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AMAL.Amal-jeli----NetworkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Amal jeli |_ Networking";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EA0E427274E761600B318E1 /* Build configuration list for PBXProject "Amal jeli |_ Networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EA0E454274E761800B318E1 /* Debug */,
+				1EA0E455274E761800B318E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EA0E456274E761800B318E1 /* Build configuration list for PBXNativeTarget "Amal jeli |_ Networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EA0E457274E761800B318E1 /* Debug */,
+				1EA0E458274E761800B318E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EA0E459274E761800B318E1 /* Build configuration list for PBXNativeTarget "Amal jeli |_ NetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EA0E45A274E761800B318E1 /* Debug */,
+				1EA0E45B274E761800B318E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EA0E45C274E761800B318E1 /* Build configuration list for PBXNativeTarget "Amal jeli |_ NetworkingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EA0E45D274E761800B318E1 /* Debug */,
+				1EA0E45E274E761800B318E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1EA0E424274E761600B318E1 /* Project object */;
+}
