@@ -7,68 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B11416B2752421000E125BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11416A2752421000E125BF /* AppDelegate.swift */; };
-		9B11416D2752421000E125BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11416C2752421000E125BF /* SceneDelegate.swift */; };
-		9B11416F2752421000E125BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11416E2752421000E125BF /* ViewController.swift */; };
-		9B1141722752421000E125BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1141702752421000E125BF /* Main.storyboard */; };
-		9B1141742752421200E125BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1141732752421200E125BF /* Assets.xcassets */; };
-		9B1141772752421200E125BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1141752752421200E125BF /* LaunchScreen.storyboard */; };
-		9B1141822752421200E125BF /* FatanLabe22Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1141812752421200E125BF /* FatanLabe22Tests.swift */; };
-		9B11418C2752421200E125BF /* FatanLabe22UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11418B2752421200E125BF /* FatanLabe22UITests.swift */; };
-		9B11418E2752421200E125BF /* FatanLabe22UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11418D2752421200E125BF /* FatanLabe22UITestsLaunchTests.swift */; };
-		9B11419B2752440F00E125BF /* Digimon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11419A2752440F00E125BF /* Digimon.swift */; };
+		9B5525912752CCF4008612A3 /* digimonDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5525902752CCF4008612A3 /* digimonDetailCell.swift */; };
+		9BF1B56B2752C591000659B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF1B56A2752C591000659B4 /* AppDelegate.swift */; };
+		9BF1B56D2752C591000659B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF1B56C2752C591000659B4 /* SceneDelegate.swift */; };
+		9BF1B56F2752C591000659B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF1B56E2752C591000659B4 /* ViewController.swift */; };
+		9BF1B5722752C591000659B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BF1B5702752C591000659B4 /* Main.storyboard */; };
+		9BF1B5742752C592000659B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BF1B5732752C592000659B4 /* Assets.xcassets */; };
+		9BF1B5772752C592000659B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BF1B5752752C592000659B4 /* LaunchScreen.storyboard */; };
+		9BF1B5822752C592000659B4 /* FatanAbdullahLabe22Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF1B5812752C592000659B4 /* FatanAbdullahLabe22Tests.swift */; };
+		9BF1B58C2752C592000659B4 /* FatanAbdullahLabe22UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF1B58B2752C592000659B4 /* FatanAbdullahLabe22UITests.swift */; };
+		9BF1B58E2752C592000659B4 /* FatanAbdullahLabe22UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF1B58D2752C592000659B4 /* FatanAbdullahLabe22UITestsLaunchTests.swift */; };
+		9BF1B59B2752C824000659B4 /* Digimon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF1B59A2752C824000659B4 /* Digimon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9B11417E2752421200E125BF /* PBXContainerItemProxy */ = {
+		9BF1B57E2752C592000659B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9B11415F2752421000E125BF /* Project object */;
+			containerPortal = 9BF1B55F2752C591000659B4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9B1141662752421000E125BF;
-			remoteInfo = FatanLabe22;
+			remoteGlobalIDString = 9BF1B5662752C591000659B4;
+			remoteInfo = FatanAbdullahLabe22;
 		};
-		9B1141882752421200E125BF /* PBXContainerItemProxy */ = {
+		9BF1B5882752C592000659B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9B11415F2752421000E125BF /* Project object */;
+			containerPortal = 9BF1B55F2752C591000659B4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9B1141662752421000E125BF;
-			remoteInfo = FatanLabe22;
+			remoteGlobalIDString = 9BF1B5662752C591000659B4;
+			remoteInfo = FatanAbdullahLabe22;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9B1141672752421000E125BF /* FatanLabe22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FatanLabe22.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B11416A2752421000E125BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9B11416C2752421000E125BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9B11416E2752421000E125BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9B1141712752421000E125BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9B1141732752421200E125BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9B1141762752421200E125BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9B1141782752421200E125BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B11417D2752421200E125BF /* FatanLabe22Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FatanLabe22Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B1141812752421200E125BF /* FatanLabe22Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatanLabe22Tests.swift; sourceTree = "<group>"; };
-		9B1141872752421200E125BF /* FatanLabe22UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FatanLabe22UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B11418B2752421200E125BF /* FatanLabe22UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatanLabe22UITests.swift; sourceTree = "<group>"; };
-		9B11418D2752421200E125BF /* FatanLabe22UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatanLabe22UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9B11419A2752440F00E125BF /* Digimon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digimon.swift; sourceTree = "<group>"; };
+		9B5525902752CCF4008612A3 /* digimonDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = digimonDetailCell.swift; sourceTree = "<group>"; };
+		9BF1B5672752C591000659B4 /* FatanAbdullahLabe22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FatanAbdullahLabe22.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BF1B56A2752C591000659B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BF1B56C2752C591000659B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9BF1B56E2752C591000659B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BF1B5712752C591000659B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BF1B5732752C592000659B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BF1B5762752C592000659B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BF1B5782752C592000659B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BF1B57D2752C592000659B4 /* FatanAbdullahLabe22Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FatanAbdullahLabe22Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BF1B5812752C592000659B4 /* FatanAbdullahLabe22Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatanAbdullahLabe22Tests.swift; sourceTree = "<group>"; };
+		9BF1B5872752C592000659B4 /* FatanAbdullahLabe22UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FatanAbdullahLabe22UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BF1B58B2752C592000659B4 /* FatanAbdullahLabe22UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatanAbdullahLabe22UITests.swift; sourceTree = "<group>"; };
+		9BF1B58D2752C592000659B4 /* FatanAbdullahLabe22UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatanAbdullahLabe22UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9BF1B59A2752C824000659B4 /* Digimon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digimon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9B1141642752421000E125BF /* Frameworks */ = {
+		9BF1B5642752C591000659B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B11417A2752421200E125BF /* Frameworks */ = {
+		9BF1B57A2752C592000659B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B1141842752421200E125BF /* Frameworks */ = {
+		9BF1B5842752C592000659B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,146 +80,155 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9B11415E2752421000E125BF = {
+		9B5525922752CCF9008612A3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9B1141692752421000E125BF /* FatanLabe22 */,
-				9B1141802752421200E125BF /* FatanLabe22Tests */,
-				9B11418A2752421200E125BF /* FatanLabe22UITests */,
-				9B1141682752421000E125BF /* Products */,
+				9BF1B59A2752C824000659B4 /* Digimon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B5525932752CD52008612A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B5525902752CCF4008612A3 /* digimonDetailCell.swift */,
+				9BF1B5702752C591000659B4 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9BF1B55E2752C591000659B4 = {
+			isa = PBXGroup;
+			children = (
+				9BF1B5692752C591000659B4 /* FatanAbdullahLabe22 */,
+				9BF1B5802752C592000659B4 /* FatanAbdullahLabe22Tests */,
+				9BF1B58A2752C592000659B4 /* FatanAbdullahLabe22UITests */,
+				9BF1B5682752C591000659B4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9B1141682752421000E125BF /* Products */ = {
+		9BF1B5682752C591000659B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B1141672752421000E125BF /* FatanLabe22.app */,
-				9B11417D2752421200E125BF /* FatanLabe22Tests.xctest */,
-				9B1141872752421200E125BF /* FatanLabe22UITests.xctest */,
+				9BF1B5672752C591000659B4 /* FatanAbdullahLabe22.app */,
+				9BF1B57D2752C592000659B4 /* FatanAbdullahLabe22Tests.xctest */,
+				9BF1B5872752C592000659B4 /* FatanAbdullahLabe22UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9B1141692752421000E125BF /* FatanLabe22 */ = {
+		9BF1B5692752C591000659B4 /* FatanAbdullahLabe22 */ = {
 			isa = PBXGroup;
 			children = (
-				9B11416A2752421000E125BF /* AppDelegate.swift */,
-				9B11416C2752421000E125BF /* SceneDelegate.swift */,
-				9B11416E2752421000E125BF /* ViewController.swift */,
-				9B1141702752421000E125BF /* Main.storyboard */,
-				9B11419C2752442200E125BF /* Model */,
-				9B1141732752421200E125BF /* Assets.xcassets */,
-				9B1141752752421200E125BF /* LaunchScreen.storyboard */,
-				9B1141782752421200E125BF /* Info.plist */,
+				9BF1B56A2752C591000659B4 /* AppDelegate.swift */,
+				9BF1B56C2752C591000659B4 /* SceneDelegate.swift */,
+				9BF1B56E2752C591000659B4 /* ViewController.swift */,
+				9B5525932752CD52008612A3 /* View */,
+				9B5525922752CCF9008612A3 /* Model */,
+				9BF1B5732752C592000659B4 /* Assets.xcassets */,
+				9BF1B5752752C592000659B4 /* LaunchScreen.storyboard */,
+				9BF1B5782752C592000659B4 /* Info.plist */,
 			);
-			path = FatanLabe22;
+			path = FatanAbdullahLabe22;
 			sourceTree = "<group>";
 		};
-		9B1141802752421200E125BF /* FatanLabe22Tests */ = {
+		9BF1B5802752C592000659B4 /* FatanAbdullahLabe22Tests */ = {
 			isa = PBXGroup;
 			children = (
-				9B1141812752421200E125BF /* FatanLabe22Tests.swift */,
+				9BF1B5812752C592000659B4 /* FatanAbdullahLabe22Tests.swift */,
 			);
-			path = FatanLabe22Tests;
+			path = FatanAbdullahLabe22Tests;
 			sourceTree = "<group>";
 		};
-		9B11418A2752421200E125BF /* FatanLabe22UITests */ = {
+		9BF1B58A2752C592000659B4 /* FatanAbdullahLabe22UITests */ = {
 			isa = PBXGroup;
 			children = (
-				9B11418B2752421200E125BF /* FatanLabe22UITests.swift */,
-				9B11418D2752421200E125BF /* FatanLabe22UITestsLaunchTests.swift */,
+				9BF1B58B2752C592000659B4 /* FatanAbdullahLabe22UITests.swift */,
+				9BF1B58D2752C592000659B4 /* FatanAbdullahLabe22UITestsLaunchTests.swift */,
 			);
-			path = FatanLabe22UITests;
-			sourceTree = "<group>";
-		};
-		9B11419C2752442200E125BF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				9B11419A2752440F00E125BF /* Digimon.swift */,
-			);
-			path = Model;
+			path = FatanAbdullahLabe22UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9B1141662752421000E125BF /* FatanLabe22 */ = {
+		9BF1B5662752C591000659B4 /* FatanAbdullahLabe22 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B1141912752421200E125BF /* Build configuration list for PBXNativeTarget "FatanLabe22" */;
+			buildConfigurationList = 9BF1B5912752C592000659B4 /* Build configuration list for PBXNativeTarget "FatanAbdullahLabe22" */;
 			buildPhases = (
-				9B1141632752421000E125BF /* Sources */,
-				9B1141642752421000E125BF /* Frameworks */,
-				9B1141652752421000E125BF /* Resources */,
+				9BF1B5632752C591000659B4 /* Sources */,
+				9BF1B5642752C591000659B4 /* Frameworks */,
+				9BF1B5652752C591000659B4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FatanLabe22;
-			productName = FatanLabe22;
-			productReference = 9B1141672752421000E125BF /* FatanLabe22.app */;
+			name = FatanAbdullahLabe22;
+			productName = FatanAbdullahLabe22;
+			productReference = 9BF1B5672752C591000659B4 /* FatanAbdullahLabe22.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9B11417C2752421200E125BF /* FatanLabe22Tests */ = {
+		9BF1B57C2752C592000659B4 /* FatanAbdullahLabe22Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B1141942752421200E125BF /* Build configuration list for PBXNativeTarget "FatanLabe22Tests" */;
+			buildConfigurationList = 9BF1B5942752C592000659B4 /* Build configuration list for PBXNativeTarget "FatanAbdullahLabe22Tests" */;
 			buildPhases = (
-				9B1141792752421200E125BF /* Sources */,
-				9B11417A2752421200E125BF /* Frameworks */,
-				9B11417B2752421200E125BF /* Resources */,
+				9BF1B5792752C592000659B4 /* Sources */,
+				9BF1B57A2752C592000659B4 /* Frameworks */,
+				9BF1B57B2752C592000659B4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9B11417F2752421200E125BF /* PBXTargetDependency */,
+				9BF1B57F2752C592000659B4 /* PBXTargetDependency */,
 			);
-			name = FatanLabe22Tests;
-			productName = FatanLabe22Tests;
-			productReference = 9B11417D2752421200E125BF /* FatanLabe22Tests.xctest */;
+			name = FatanAbdullahLabe22Tests;
+			productName = FatanAbdullahLabe22Tests;
+			productReference = 9BF1B57D2752C592000659B4 /* FatanAbdullahLabe22Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9B1141862752421200E125BF /* FatanLabe22UITests */ = {
+		9BF1B5862752C592000659B4 /* FatanAbdullahLabe22UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B1141972752421200E125BF /* Build configuration list for PBXNativeTarget "FatanLabe22UITests" */;
+			buildConfigurationList = 9BF1B5972752C592000659B4 /* Build configuration list for PBXNativeTarget "FatanAbdullahLabe22UITests" */;
 			buildPhases = (
-				9B1141832752421200E125BF /* Sources */,
-				9B1141842752421200E125BF /* Frameworks */,
-				9B1141852752421200E125BF /* Resources */,
+				9BF1B5832752C592000659B4 /* Sources */,
+				9BF1B5842752C592000659B4 /* Frameworks */,
+				9BF1B5852752C592000659B4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9B1141892752421200E125BF /* PBXTargetDependency */,
+				9BF1B5892752C592000659B4 /* PBXTargetDependency */,
 			);
-			name = FatanLabe22UITests;
-			productName = FatanLabe22UITests;
-			productReference = 9B1141872752421200E125BF /* FatanLabe22UITests.xctest */;
+			name = FatanAbdullahLabe22UITests;
+			productName = FatanAbdullahLabe22UITests;
+			productReference = 9BF1B5872752C592000659B4 /* FatanAbdullahLabe22UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9B11415F2752421000E125BF /* Project object */ = {
+		9BF1B55F2752C591000659B4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					9B1141662752421000E125BF = {
+					9BF1B5662752C591000659B4 = {
 						CreatedOnToolsVersion = 13.1;
 					};
-					9B11417C2752421200E125BF = {
+					9BF1B57C2752C592000659B4 = {
 						CreatedOnToolsVersion = 13.1;
-						TestTargetID = 9B1141662752421000E125BF;
+						TestTargetID = 9BF1B5662752C591000659B4;
 					};
-					9B1141862752421200E125BF = {
+					9BF1B5862752C592000659B4 = {
 						CreatedOnToolsVersion = 13.1;
-						TestTargetID = 9B1141662752421000E125BF;
+						TestTargetID = 9BF1B5662752C591000659B4;
 					};
 				};
 			};
-			buildConfigurationList = 9B1141622752421000E125BF /* Build configuration list for PBXProject "FatanLabe22" */;
+			buildConfigurationList = 9BF1B5622752C591000659B4 /* Build configuration list for PBXProject "FatanAbdullahLabe22" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -225,37 +236,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 9B11415E2752421000E125BF;
-			productRefGroup = 9B1141682752421000E125BF /* Products */;
+			mainGroup = 9BF1B55E2752C591000659B4;
+			productRefGroup = 9BF1B5682752C591000659B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9B1141662752421000E125BF /* FatanLabe22 */,
-				9B11417C2752421200E125BF /* FatanLabe22Tests */,
-				9B1141862752421200E125BF /* FatanLabe22UITests */,
+				9BF1B5662752C591000659B4 /* FatanAbdullahLabe22 */,
+				9BF1B57C2752C592000659B4 /* FatanAbdullahLabe22Tests */,
+				9BF1B5862752C592000659B4 /* FatanAbdullahLabe22UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9B1141652752421000E125BF /* Resources */ = {
+		9BF1B5652752C591000659B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B1141772752421200E125BF /* LaunchScreen.storyboard in Resources */,
-				9B1141742752421200E125BF /* Assets.xcassets in Resources */,
-				9B1141722752421000E125BF /* Main.storyboard in Resources */,
+				9BF1B5772752C592000659B4 /* LaunchScreen.storyboard in Resources */,
+				9BF1B5742752C592000659B4 /* Assets.xcassets in Resources */,
+				9BF1B5722752C591000659B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B11417B2752421200E125BF /* Resources */ = {
+		9BF1B57B2752C592000659B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B1141852752421200E125BF /* Resources */ = {
+		9BF1B5852752C592000659B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,62 +276,63 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9B1141632752421000E125BF /* Sources */ = {
+		9BF1B5632752C591000659B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B11416F2752421000E125BF /* ViewController.swift in Sources */,
-				9B11416B2752421000E125BF /* AppDelegate.swift in Sources */,
-				9B11416D2752421000E125BF /* SceneDelegate.swift in Sources */,
-				9B11419B2752440F00E125BF /* Digimon.swift in Sources */,
+				9B5525912752CCF4008612A3 /* digimonDetailCell.swift in Sources */,
+				9BF1B56F2752C591000659B4 /* ViewController.swift in Sources */,
+				9BF1B56B2752C591000659B4 /* AppDelegate.swift in Sources */,
+				9BF1B56D2752C591000659B4 /* SceneDelegate.swift in Sources */,
+				9BF1B59B2752C824000659B4 /* Digimon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B1141792752421200E125BF /* Sources */ = {
+		9BF1B5792752C592000659B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B1141822752421200E125BF /* FatanLabe22Tests.swift in Sources */,
+				9BF1B5822752C592000659B4 /* FatanAbdullahLabe22Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B1141832752421200E125BF /* Sources */ = {
+		9BF1B5832752C592000659B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B11418C2752421200E125BF /* FatanLabe22UITests.swift in Sources */,
-				9B11418E2752421200E125BF /* FatanLabe22UITestsLaunchTests.swift in Sources */,
+				9BF1B58E2752C592000659B4 /* FatanAbdullahLabe22UITestsLaunchTests.swift in Sources */,
+				9BF1B58C2752C592000659B4 /* FatanAbdullahLabe22UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9B11417F2752421200E125BF /* PBXTargetDependency */ = {
+		9BF1B57F2752C592000659B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9B1141662752421000E125BF /* FatanLabe22 */;
-			targetProxy = 9B11417E2752421200E125BF /* PBXContainerItemProxy */;
+			target = 9BF1B5662752C591000659B4 /* FatanAbdullahLabe22 */;
+			targetProxy = 9BF1B57E2752C592000659B4 /* PBXContainerItemProxy */;
 		};
-		9B1141892752421200E125BF /* PBXTargetDependency */ = {
+		9BF1B5892752C592000659B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9B1141662752421000E125BF /* FatanLabe22 */;
-			targetProxy = 9B1141882752421200E125BF /* PBXContainerItemProxy */;
+			target = 9BF1B5662752C591000659B4 /* FatanAbdullahLabe22 */;
+			targetProxy = 9BF1B5882752C592000659B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9B1141702752421000E125BF /* Main.storyboard */ = {
+		9BF1B5702752C591000659B4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9B1141712752421000E125BF /* Base */,
+				9BF1B5712752C591000659B4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		9B1141752752421200E125BF /* LaunchScreen.storyboard */ = {
+		9BF1B5752752C592000659B4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9B1141762752421200E125BF /* Base */,
+				9BF1B5762752C592000659B4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -328,7 +340,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9B11418F2752421200E125BF /* Debug */ = {
+		9BF1B58F2752C592000659B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -389,7 +401,7 @@
 			};
 			name = Debug;
 		};
-		9B1141902752421200E125BF /* Release */ = {
+		9BF1B5902752C592000659B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -444,7 +456,7 @@
 			};
 			name = Release;
 		};
-		9B1141922752421200E125BF /* Debug */ = {
+		9BF1B5922752C592000659B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -452,7 +464,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FatanLabe22/Info.plist;
+				INFOPLIST_FILE = FatanAbdullahLabe22/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -463,7 +475,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tuwaiq.ios.FatanLabe22;
+				PRODUCT_BUNDLE_IDENTIFIER = tuwaiq.ios.FatanAbdullahLabe22;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -471,7 +483,7 @@
 			};
 			name = Debug;
 		};
-		9B1141932752421200E125BF /* Release */ = {
+		9BF1B5932752C592000659B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -479,7 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FatanLabe22/Info.plist;
+				INFOPLIST_FILE = FatanAbdullahLabe22/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -490,7 +502,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tuwaiq.ios.FatanLabe22;
+				PRODUCT_BUNDLE_IDENTIFIER = tuwaiq.ios.FatanAbdullahLabe22;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -498,7 +510,7 @@
 			};
 			name = Release;
 		};
-		9B1141952752421200E125BF /* Debug */ = {
+		9BF1B5952752C592000659B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -513,16 +525,16 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tuwaiq.ios.FatanLabe22Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = tuwaiq.ios.FatanAbdullahLabe22Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FatanLabe22.app/FatanLabe22";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FatanAbdullahLabe22.app/FatanAbdullahLabe22";
 			};
 			name = Debug;
 		};
-		9B1141962752421200E125BF /* Release */ = {
+		9BF1B5962752C592000659B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -537,16 +549,16 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tuwaiq.ios.FatanLabe22Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = tuwaiq.ios.FatanAbdullahLabe22Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FatanLabe22.app/FatanLabe22";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FatanAbdullahLabe22.app/FatanAbdullahLabe22";
 			};
 			name = Release;
 		};
-		9B1141982752421200E125BF /* Debug */ = {
+		9BF1B5982752C592000659B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -559,16 +571,16 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tuwaiq.ios.FatanLabe22UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = tuwaiq.ios.FatanAbdullahLabe22UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FatanLabe22;
+				TEST_TARGET_NAME = FatanAbdullahLabe22;
 			};
 			name = Debug;
 		};
-		9B1141992752421200E125BF /* Release */ = {
+		9BF1B5992752C592000659B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -581,55 +593,55 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tuwaiq.ios.FatanLabe22UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = tuwaiq.ios.FatanAbdullahLabe22UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FatanLabe22;
+				TEST_TARGET_NAME = FatanAbdullahLabe22;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9B1141622752421000E125BF /* Build configuration list for PBXProject "FatanLabe22" */ = {
+		9BF1B5622752C591000659B4 /* Build configuration list for PBXProject "FatanAbdullahLabe22" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B11418F2752421200E125BF /* Debug */,
-				9B1141902752421200E125BF /* Release */,
+				9BF1B58F2752C592000659B4 /* Debug */,
+				9BF1B5902752C592000659B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B1141912752421200E125BF /* Build configuration list for PBXNativeTarget "FatanLabe22" */ = {
+		9BF1B5912752C592000659B4 /* Build configuration list for PBXNativeTarget "FatanAbdullahLabe22" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B1141922752421200E125BF /* Debug */,
-				9B1141932752421200E125BF /* Release */,
+				9BF1B5922752C592000659B4 /* Debug */,
+				9BF1B5932752C592000659B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B1141942752421200E125BF /* Build configuration list for PBXNativeTarget "FatanLabe22Tests" */ = {
+		9BF1B5942752C592000659B4 /* Build configuration list for PBXNativeTarget "FatanAbdullahLabe22Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B1141952752421200E125BF /* Debug */,
-				9B1141962752421200E125BF /* Release */,
+				9BF1B5952752C592000659B4 /* Debug */,
+				9BF1B5962752C592000659B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B1141972752421200E125BF /* Build configuration list for PBXNativeTarget "FatanLabe22UITests" */ = {
+		9BF1B5972752C592000659B4 /* Build configuration list for PBXNativeTarget "FatanAbdullahLabe22UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B1141982752421200E125BF /* Debug */,
-				9B1141992752421200E125BF /* Release */,
+				9BF1B5982752C592000659B4 /* Debug */,
+				9BF1B5992752C592000659B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9B11415F2752421000E125BF /* Project object */;
+	rootObject = 9BF1B55F2752C591000659B4 /* Project object */;
 }

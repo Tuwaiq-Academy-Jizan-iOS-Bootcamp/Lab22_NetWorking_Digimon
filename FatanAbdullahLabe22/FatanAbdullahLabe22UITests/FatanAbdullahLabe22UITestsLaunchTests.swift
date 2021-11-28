@@ -1,13 +1,13 @@
 //
-//  FatanLabe22UITestsLaunchTests.swift
-//  FatanLabe22UITests
+//  FatanAbdullahLabe22UITestsLaunchTests.swift
+//  FatanAbdullahLabe22UITests
 //
 //  Created by Faten Abdullh salem on 22/04/1443 AH.
 //
 
 import XCTest
 
-class FatanLabe22UITestsLaunchTests: XCTestCase {
+class FatanAbdullahLabe22UITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

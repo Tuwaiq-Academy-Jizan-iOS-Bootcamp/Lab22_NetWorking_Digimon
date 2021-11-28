@@ -1,13 +1,13 @@
 //
-//  FatanLabe22UITests.swift
-//  FatanLabe22UITests
+//  FatanAbdullahLabe22UITests.swift
+//  FatanAbdullahLabe22UITests
 //
 //  Created by Faten Abdullh salem on 22/04/1443 AH.
 //
 
 import XCTest
 
-class FatanLabe22UITests: XCTestCase {
+class FatanAbdullahLabe22UITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
