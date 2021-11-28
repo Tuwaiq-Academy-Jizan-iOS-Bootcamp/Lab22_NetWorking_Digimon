@@ -6,8 +6,16 @@
 //
 
 import Foundation
-class Digmon: Codable{
+struct Digmon: Codable {
     var name: String
     var img: String
-    var lavel: String
+    var level: String
 }
+
+/*
+ {
+     "name": "Koromon",
+     "img": "https://digimon.shadowsmith.com/img/koromon.jpg",
+     "level": "In Training"
+   }
+ */
