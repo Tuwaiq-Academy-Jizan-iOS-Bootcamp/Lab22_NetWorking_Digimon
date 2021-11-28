@@ -16,7 +16,7 @@
 		FB2E0F03274F617000AD947A /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E0F02274F617000AD947A /* APITests.swift */; };
 		FB2E0F0D274F617000AD947A /* APIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E0F0C274F617000AD947A /* APIUITests.swift */; };
 		FB2E0F0F274F617000AD947A /* APIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E0F0E274F617000AD947A /* APIUITestsLaunchTests.swift */; };
-		FB2E0F1D274F619E00AD947A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E0F1C274F619E00AD947A /* File.swift */; };
+		FB2E0F1D274F619E00AD947A /* ApiDigimon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E0F1C274F619E00AD947A /* ApiDigimon.swift */; };
 		FBE9AB5B2752B937005581C1 /* DigimonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9AB5A2752B937005581C1 /* DigimonCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +51,7 @@
 		FB2E0F08274F617000AD947A /* APIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2E0F0C274F617000AD947A /* APIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUITests.swift; sourceTree = "<group>"; };
 		FB2E0F0E274F617000AD947A /* APIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FB2E0F1C274F619E00AD947A /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		FB2E0F1C274F619E00AD947A /* ApiDigimon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDigimon.swift; sourceTree = "<group>"; };
 		FBE9AB5A2752B937005581C1 /* DigimonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,9 +105,9 @@
 			children = (
 				FB2E0EEB274F616F00AD947A /* AppDelegate.swift */,
 				FB2E0EED274F616F00AD947A /* SceneDelegate.swift */,
-				FBE9AB5C2752B93E005581C1 /* Controller */,
 				FB2E0F1B274F618800AD947A /* Model */,
-				FB2E0EF1274F616F00AD947A /* Main.storyboard */,
+				FBE9AB5C2752B93E005581C1 /* Controller */,
+				FB6DA87627534FB500ED079F /* View */,
 				FB2E0EF4274F617000AD947A /* Assets.xcassets */,
 				FB2E0EF6274F617000AD947A /* LaunchScreen.storyboard */,
 				FB2E0EF9274F617000AD947A /* Info.plist */,
@@ -135,9 +135,17 @@
 		FB2E0F1B274F618800AD947A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FB2E0F1C274F619E00AD947A /* File.swift */,
+				FB2E0F1C274F619E00AD947A /* ApiDigimon.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FB6DA87627534FB500ED079F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB2E0EF1274F616F00AD947A /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FBE9AB5C2752B93E005581C1 /* Controller */ = {
@@ -281,7 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB2E0EF0274F616F00AD947A /* ViewController.swift in Sources */,
-				FB2E0F1D274F619E00AD947A /* File.swift in Sources */,
+				FB2E0F1D274F619E00AD947A /* ApiDigimon.swift in Sources */,
 				FB2E0EEC274F616F00AD947A /* AppDelegate.swift in Sources */,
 				FBE9AB5B2752B937005581C1 /* DigimonCell.swift in Sources */,
 				FB2E0EEE274F616F00AD947A /* SceneDelegate.swift in Sources */,
