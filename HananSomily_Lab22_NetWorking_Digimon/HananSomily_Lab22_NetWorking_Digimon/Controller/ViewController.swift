@@ -49,12 +49,15 @@ class ViewController: UIViewController {
                         levelLabel.text  = decodedData[0].level
                         self.digmonData = decodedData
                         self.digimonViewTabelView.reloadData()
+                        DispatchQueue.global().sync {
+                        
                     if let imageDigmon = URL(string:decodedData[0].img){
                        // DispatchQueue.global().async {
                             let data = try? Data(contentsOf: imageDigmon)
                             if let data = data {
                                 let image = UIImage(data: data)
                                 self.image.image = image
+                            }
                             }
                       //  }
                     }
@@ -88,8 +91,9 @@ extension ViewController : UITableViewDataSource {
         var content = cell.defaultContentConfiguration()
         content.text = digmonData[indexPath.row].name
         content.secondaryText = digmonData[indexPath.row].level
-        if let imageDigm = URL(string:digmonData[indexPath.row].img){
-           // DispatchQueue.global().async {
+         DispatchQueue.global().sync {
+
+             if let imageDigm = URL(string:self.digmonData[indexPath.row].img){
                 let data = try? Data(contentsOf: imageDigm)
                 if let data = data {
                     let image = UIImage(data: data)
@@ -97,6 +101,7 @@ extension ViewController : UITableViewDataSource {
                 }
         }
         content.imageProperties.maximumSize = CGSize(width: 50, height: 50)
+         }
            cell.accessoryType = .disclosureIndicator
         cell.contentConfiguration = content
       return cell
