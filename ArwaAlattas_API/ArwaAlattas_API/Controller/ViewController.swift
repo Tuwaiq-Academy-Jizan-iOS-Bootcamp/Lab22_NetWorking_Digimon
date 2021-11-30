@@ -24,14 +24,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        digimonTableView.delegate = self
-        digimonTableView.dataSource = self
         gitData(with: "/digimon")
        
         
     }
 
-//    let imageCach = NSCache<AnyObject, AnyObject>()
+    let imageCach = NSCache<AnyObject, AnyObject>()
     func gitData(with endPoint:String){
         let baseURL = "https://digimon-api.vercel.app/api"
             // step 1
@@ -54,19 +52,7 @@ let task = session.dataTask(with: url) { data, response, error in
     DispatchQueue.main.async {
             self.digimonTableView.reloadData()
                             }
-                            
-//                           print("ARRAAAAAAAAAAY",self.digimonArray)
-//                            print("DecoDATA",decoderData)
-//print(decoderData.count)
-//                            print(self.digimonArray.count)
-//                            DispatchQueue.main.async {
-//                                self.nameDigimonLabel.text = decoderData[0].name
-//                            let imgURL = URL(string: decoderData[0].img)!
-//                              if  let dataa = try? Data(contentsOf: imgURL){
-//                                      self.digimonImage.image = UIImage(data: dataa)
-//                            }
-//                                self.digimonLevelLabel.text = decoderData[0].level
-//                            }
+               
                         } catch  {
                             print("SOMTHING WRONG",error.localizedDescription)
                         }
@@ -90,12 +76,15 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
             DispatchQueue.main.async {
                 cell.digimonName .text = self.digimonArray[indexPath.row].name
                 cell.digimonLevel.text = self.digimonArray[indexPath.row].level
+                cell.digimonimage.image = nil
+                
                     let imgURL = URL(string: self.digimonArray[indexPath.row].img)!
                 DispatchQueue.global().async {
                     if  let dataa = try? Data(contentsOf: imgURL){
                         DispatchQueue.main.async {
+                            if tableView.cellForRow(at: indexPath) != nil {
                             cell.digimonimage.image = UIImage(data: dataa)
-                            
+                            }
                         }
                     }
                 }
