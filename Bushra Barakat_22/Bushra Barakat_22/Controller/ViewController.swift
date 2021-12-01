@@ -70,17 +70,7 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CellViewController
         cell.digamonNameLabel.text = digmons[indexPath.row].name
         cell.digmonLevleLabel.text = digmons[indexPath.row].level
-//        if let imageURL = URL(string: self.digmons[indexPath.row].img){
-//            DispatchQueue.global().async {
-//                if let image = try? Data(contentOf: imageURL){
-//                    let digmoImage = UIImage(data: image)
-//                    DispatchQueue.main.async {
-//                        digmonImageView.image = digmoImage
-//                        cell.contentConfiguration = cell
-//                    }
-//                }
-//            }
-//        }
+
         if
         let imageURL = URL(string: digmons[indexPath.row].img) {
             DispatchQueue.global().async {
