@@ -6,6 +6,9 @@
 //
 
 import Foundation
+struct Degimons:Codable{
+    var degimons: [Degimon]
+}
 struct Degimon:Codable{
     var name:String
     var img:String

@@ -17,6 +17,7 @@
 		BD12CD64274E5A790066A39C /* workAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD12CD63274E5A790066A39C /* workAPIUITests.swift */; };
 		BD12CD66274E5A790066A39C /* workAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD12CD65274E5A790066A39C /* workAPIUITestsLaunchTests.swift */; };
 		BD904FE2274F91DE00E7E8D0 /* Degimon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD904FE1274F91DE00E7E8D0 /* Degimon.swift */; };
+		BD904FE4275036D200E7E8D0 /* DigemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD904FE3275036D200E7E8D0 /* DigemonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BD12CD63274E5A790066A39C /* workAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workAPIUITests.swift; sourceTree = "<group>"; };
 		BD12CD65274E5A790066A39C /* workAPIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workAPIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BD904FE1274F91DE00E7E8D0 /* Degimon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Degimon.swift; sourceTree = "<group>"; };
+		BD904FE3275036D200E7E8D0 /* DigemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigemonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +105,10 @@
 			children = (
 				BD12CD42274E5A770066A39C /* AppDelegate.swift */,
 				BD12CD44274E5A770066A39C /* SceneDelegate.swift */,
-				BD12CD46274E5A770066A39C /* ViewController.swift */,
-				BD904FE1274F91DE00E7E8D0 /* Degimon.swift */,
-				BD12CD48274E5A770066A39C /* Main.storyboard */,
-				BD12CD4B274E5A790066A39C /* Assets.xcassets */,
+				BD12CD74274E7A420066A39C /* Model */,
 				BD12CD77274E7B620066A39C /* view */,
 				BD12CD76274E7B070066A39C /* controller */,
-				BD12CD74274E7A420066A39C /* Model */,
+				BD12CD4B274E5A790066A39C /* Assets.xcassets */,
 				BD12CD4D274E5A790066A39C /* LaunchScreen.storyboard */,
 				BD12CD50274E5A790066A39C /* Info.plist */,
 			);
@@ -136,6 +135,7 @@
 		BD12CD74274E7A420066A39C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BD904FE1274F91DE00E7E8D0 /* Degimon.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -143,6 +143,7 @@
 		BD12CD76274E7B070066A39C /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				BD12CD46274E5A770066A39C /* ViewController.swift */,
 			);
 			name = controller;
 			path = view;
@@ -151,6 +152,8 @@
 		BD12CD77274E7B620066A39C /* view */ = {
 			isa = PBXGroup;
 			children = (
+				BD12CD48274E5A770066A39C /* Main.storyboard */,
+				BD904FE3275036D200E7E8D0 /* DigemonTableViewCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD904FE4275036D200E7E8D0 /* DigemonTableViewCell.swift in Sources */,
 				BD12CD47274E5A770066A39C /* ViewController.swift in Sources */,
 				BD12CD43274E5A770066A39C /* AppDelegate.swift in Sources */,
 				BD12CD45274E5A770066A39C /* SceneDelegate.swift in Sources */,
