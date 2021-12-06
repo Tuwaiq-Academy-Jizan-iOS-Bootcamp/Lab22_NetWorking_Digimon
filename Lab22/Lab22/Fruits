@@ -1,0 +1,14 @@
+//
+//  Animal.swift
+//  Lab22
+//
+//  Created by زهور حسين on 19/04/1443 AH.
+//
+
+import Foundation
+struct Fruit: Codable {
+    var name: String
+    var image:String
+    var num: String
+}
+
