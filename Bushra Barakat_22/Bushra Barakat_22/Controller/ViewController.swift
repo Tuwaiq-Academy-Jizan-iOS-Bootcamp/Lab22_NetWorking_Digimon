@@ -71,8 +71,7 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
         cell.digamonNameLabel.text = digmons[indexPath.row].name
         cell.digmonLevleLabel.text = digmons[indexPath.row].level
 
-        if
-        let imageURL = URL(string: digmons[indexPath.row].img) {
+        if let imageURL = URL(string: digmons[indexPath.row].img) {
             DispatchQueue.global().async {
                 let data = try? Data(contentsOf: imageURL)
                 if let data = data {
