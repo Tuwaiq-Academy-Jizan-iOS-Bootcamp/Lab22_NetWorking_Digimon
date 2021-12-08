@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Nasser_ali_lab22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VkF-Gv-vpG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="575"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q0M-JT-QOA">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="209"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Upv-eI-o9h">
+                                                <rect key="frame" x="20" y="0.0" width="280" height="161"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="161" id="Z5s-Ub-118"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iRG-EF-euO">
+                                                <rect key="frame" x="0.0" y="161" width="320" height="48"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJU-Y5-5Zw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpj-ZP-Mcf">
+                                                        <rect key="frame" x="0.0" y="24" width="320" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Rpj-ZP-Mcf" secondAttribute="trailing" id="5x3-yv-H6C"/>
+                                                    <constraint firstItem="Rpj-ZP-Mcf" firstAttribute="leading" secondItem="iRG-EF-euO" secondAttribute="leading" id="A5M-On-egV"/>
+                                                    <constraint firstItem="sJU-Y5-5Zw" firstAttribute="leading" secondItem="iRG-EF-euO" secondAttribute="leading" id="BBm-v6-RI6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sJU-Y5-5Zw" secondAttribute="trailing" id="pCQ-8J-eHq"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="iRG-EF-euO" secondAttribute="trailing" id="ADY-Jw-2Ij"/>
+                                            <constraint firstItem="iRG-EF-euO" firstAttribute="top" secondItem="Upv-eI-o9h" secondAttribute="bottom" id="EE5-cb-gRJ"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Upv-eI-o9h" secondAttribute="trailing" constant="20" id="GgN-JZ-MBl"/>
+                                            <constraint firstItem="Upv-eI-o9h" firstAttribute="leading" secondItem="q0M-JT-QOA" secondAttribute="leading" constant="20" id="JpG-We-34e"/>
+                                            <constraint firstItem="iRG-EF-euO" firstAttribute="top" secondItem="Upv-eI-o9h" secondAttribute="bottom" id="N0j-TA-YJh"/>
+                                            <constraint firstItem="Upv-eI-o9h" firstAttribute="top" secondItem="q0M-JT-QOA" secondAttribute="top" id="QyI-0u-Njm"/>
+                                            <constraint firstItem="iRG-EF-euO" firstAttribute="leading" secondItem="q0M-JT-QOA" secondAttribute="leading" id="eEP-zu-WCo"/>
+                                            <constraint firstItem="Upv-eI-o9h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="q0M-JT-QOA" secondAttribute="leading" constant="20" id="u9D-u9-l0H"/>
+                                        </constraints>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="r4Q-Pd-t68" userLabel="Digmon Tabel">
+                                        <rect key="frame" x="0.0" y="209" width="320" height="366"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="366" id="y26-cK-FwP"/>
+                                        </constraints>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Bn5-Fm-q6y">
+                                                <rect key="frame" x="0.0" y="44.5" width="320" height="43.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bn5-Fm-q6y" id="gVH-Cu-UcC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="digmonImage" destination="Upv-eI-o9h" id="KbP-yy-zEi"/>
+                        <outlet property="digmonLevel" destination="Rpj-ZP-Mcf" id="BUw-GO-j7z"/>
+                        <outlet property="digmonName" destination="sJU-Y5-5Zw" id="BDa-9m-Rsi"/>
+                        <outlet property="digmonTabel" destination="r4Q-Pd-t68" id="y9M-bK-uF1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
